@@ -1,0 +1,5 @@
+The first commit
+The second commit for .gitignore file
+The third commit
+Adding 3 lines to lorem.txt
+Renamimg lorem.txt
