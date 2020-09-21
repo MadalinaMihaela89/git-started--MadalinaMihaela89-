@@ -2,4 +2,4 @@
 *.tmp
 
 #ignore the temp folder
-/temp
+temp/
