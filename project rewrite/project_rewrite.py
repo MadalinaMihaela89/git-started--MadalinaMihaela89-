@@ -7,7 +7,7 @@ def min_func(x, y):
         return x or y
 
 
- print(min_func(3, 11))
+print(min_func(3, 11))
 
 
 def max_func(values_list):
@@ -18,7 +18,7 @@ def max_func(values_list):
     return max
 
 
- print(max_func([12, 56, 121, 24, 384]))
+print(max_func([12, 56, 121, 24, 384]))
 
 
 def len_func(values_list1):
@@ -28,11 +28,11 @@ def len_func(values_list1):
     return count
 
 
- print(len_func([72, 4, 33, 12, 2, 57, 18, 5]))
+print(len_func([72, 4, 33, 12, 2, 57, 18, 5]))
 
 
- x = int(input("Enter first number: "))
- y = int(input("Enter second number: "))
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
 
 
 def multiply_func(x, y):
@@ -48,7 +48,7 @@ def multiply_func(x, y):
         return x + multiply_func(x, y - 1)
 
 
- print("The product for the two numbers is: ", multiply_func(x, y))
+print("The product for the two numbers is: ", multiply_func(x, y))
 
 
 def pow_func(x, y):
@@ -60,34 +60,39 @@ def pow_func(x, y):
         return (x * pow_func(x, int(y / 2)) * pow_func(x, int(y / 2)))
 
 
- x = 4
- y = 5
- print(pow_func(x, y))
+x = 2
+y = 3
+
+
+print(pow_func(x, y))
 
 
 def division(num1, num2):
 
     negResult = 0
 
-   if (num1 < 0):
+    if (num1 < 0):
         num1 = - num1
+    if (num2 < 0): 
+        num2 = - num2
+    else: 
+        negResult = True 
 
-   if (num2 < 0): 
-            num2 = - num2
-   else: 
-      negResult = True 
+
+    quotient = 0
+
+    while (num1 >= num2):
+        num1 = num1 - num2
+        quotient += 1
 
 
- quotient = 0
+    if (negResult):
+        quotient = - quotient
+        return quotient
 
- while (num1 >= num2):
-    num1 = num1 - num2
-    quotient += 1
-  if (negResult):
-    quotient = - quotient
-    return quotient
- num1 = int(input("Please insert first number here: ")):
- num2 = int(input("Please insert second number here: "))
+
+num1 = int(input("Please insert first number here: ")) 
+num2 = int(input("Please insert second number here: "))
 
 
 def remainder(num1, num2):
@@ -100,5 +105,4 @@ def remainder(num1, num2):
   return num1
 
 
- print(f"({division(num1, num2)}, {remainder(num1, num2)})")
- 
+print(f"({division(num1, num2)}, {remainder(num1, num2)})")
