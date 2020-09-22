@@ -4,4 +4,5 @@ word_list = [
     'sternocloidomastoidian',
     'industrial',
     'veverita'
+    'quit'
 ]
