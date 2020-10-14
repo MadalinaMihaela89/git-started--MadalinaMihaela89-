@@ -10,3 +10,12 @@ be from 1 character up to 10 characters,but will never be empty.
 
 def capitalize_word(word):
     return word[0].upper() + word[1:]
+
+
+"""
+def capitalize_word(word):
+    first = word[0].upper()
+    remaining = word[1:].lower()
+    text = first + remaining
+    return text
+"""
