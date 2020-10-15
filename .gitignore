@@ -1,5 +1,0 @@
-#ignore temporary files with the .tmp extension
-*.tmp
-
-#ignore the temp folder
-temp/
