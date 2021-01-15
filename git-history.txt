@@ -1,0 +1,3 @@
+[master] Cleaning git started folder
+[master] Adding .gitignore file
+[master] Adding git-history.txt
