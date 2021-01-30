@@ -1,0 +1,119 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+a,
+img,
+i,
+ol,
+ul,
+li,
+form,
+label,
+table,
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+/*MY CODE*/
+
+
+/*NAVIGATION BAR*/
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: calc(100vh - 20px);
+    margin: 0;
+}
+
+.nav-bar-wrapper {
+    display: grid;
+    grid-template-columns: 400px auto 400px;
+    grid-template-rows: auto 80px;
+    background-color: ;
+    text-align: center;
+    letter-spacing: .092em;
+    text-transform: uppercase;
+}
+
+.nav-bar-lineup-img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 15px;
+}
+
+.nav-bar-lineup-list {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+}
+
+.nav-bar-linedown {
+    background-color: ;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    overflow: hidden;
+}
+
+.nav-account a,
+.nav-buttons-clwss a {
+    text-decoration: none;
+    color: #333
+}
+
+#search-button {
+    width: 1em;
+}
+
+.nav-buttons-clwss {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-account {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
